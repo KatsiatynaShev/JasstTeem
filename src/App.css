@@ -1,0 +1,45 @@
+.nav{
+  	display: flex;
+  	justify-content: center;
+  	padding-bottom: 422px;
+  	padding-top: 100px;
+  	flex-grow: 1;
+  	width: 100%;
+  	background: linear-gradient(270deg, #a8ed95 0%,#175c05 100%);
+}
+  ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li{
+       float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+hr{
+  margin: 0;
+  padding: 0;
+  color: green; /* Цвет линии для остальных браузеров */
+    background-color: green; /* Цвет линии для браузера Firefox и Opera */
+    height: 10px; /* Толщина линии */
+}
+.button1{
+  background-color: #4CAF50;
+  font-size: 20px;
+  padding: 14px 40px;
+  border-radius: 8px;
+  width: 200px;
+
+}

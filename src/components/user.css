@@ -1,0 +1,7 @@
+.Usernew {
+	display: flex;
+	justify-content: center;
+	padding-top: 50px;
+	flex-grow: 1;
+	background: linear-gradient(270deg, #a8ed95 0%,#175c05 100%);
+}

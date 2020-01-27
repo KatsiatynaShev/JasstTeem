@@ -1,0 +1,19 @@
+.informa{
+        background: url(book.jpg) ;
+        background-repeat: no-repeat;
+        margin: auto;
+        position: absolute;
+        top: 13%;
+        width: 1366px;
+        height: 580px;
+}
+p{
+  font-family:serif;
+  font-style:normal;
+  font-size: 24px;
+}
+h1{
+  font-family:serif;
+  font-style:normal;
+  font-size: 24px;
+}

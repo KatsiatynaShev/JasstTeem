@@ -1,0 +1,35 @@
+.demoForm {
+	display: flex;
+	justify-content: center;
+	flex-grow: 1;
+	width: 100%;
+	background: linear-gradient(270deg, #a8ed95 0%,#175c05 100%);
+}
+
+.form-group{
+	width: 150px;
+	height: 88px;
+}
+
+
+.form{
+	letter-spacing: 5px;
+	color: #fff;
+	text: center;
+	width: 300px; /* Ширина блока */
+  padding: 10px; /* Поля */
+  margin-top: 10px; /* Отступ сверху */
+  border: 2px solid #000; /* Параметры рамки */
+ -moz-box-sizing: border-box; /* Для Firefox */
+ font-size: 18px;
+}
+
+
+button{
+	background-color: #4CAF50;
+  font-size: 20px;
+  padding: 14px 40px;
+  border-radius: 8px;
+  width: 200px;
+
+}
