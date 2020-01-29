@@ -3,12 +3,13 @@
 	justify-content: center;
 	flex-grow: 1;
 	width: 100%;
-	background: linear-gradient(270deg, #a8ed95 0%,#175c05 100%);
-}
-
-.form-group{
-	width: 150px;
-	height: 88px;
+	height:100%;
+	background: url(book.jpg) ;
+	background-repeat: no-repeat;
+	margin: auto;
+	position: absolute;
+	width: 1366px;
+	height: 580px;
 }
 
 
@@ -16,16 +17,20 @@
 	letter-spacing: 5px;
 	color: #fff;
 	text: center;
-	width: 300px; /* Ширина блока */
-  padding: 10px; /* Поля */
-  margin-top: 10px; /* Отступ сверху */
-  border: 2px solid #000; /* Параметры рамки */
+	width: 230px; /* Ширина блока */
+	height: 300px;/*высота*/
+  padding: 15px; /* Поля */
+ margin-top: 150px;
+ border: 2px solid #000; /* Параметры рамки */
  -moz-box-sizing: border-box; /* Для Firefox */
- font-size: 18px;
+ font-size: 15px;
+ background: linear-gradient(270deg, #a8ed95 0%,#175c05 100%);
+
 }
 
 
 button{
+	margin-top: 30px; /* Отступ сверху */
 	background-color: #4CAF50;
   font-size: 20px;
   padding: 14px 40px;

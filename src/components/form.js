@@ -64,6 +64,8 @@ class Form extends Component {
 
   onclick () {
        this.setState({formValid: window.location.assign('http://localhost:3000/user/')}) ;
+
+
       }
 
 

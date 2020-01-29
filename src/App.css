@@ -1,11 +1,11 @@
 .nav{
-  	display: flex;
-  	justify-content: center;
-  	padding-bottom: 422px;
-  	padding-top: 100px;
-  	flex-grow: 1;
-  	width: 100%;
-  	background: linear-gradient(270deg, #a8ed95 0%,#175c05 100%);
+    background: url(book1.jpg) ;
+    background-repeat: no-repeat;
+    margin: auto;
+    position: absolute;
+    top: 13%;
+    width: 1366px;
+    height: 580px;
 }
   ul{
     list-style-type: none;
@@ -41,5 +41,6 @@ hr{
   padding: 14px 40px;
   border-radius: 8px;
   width: 200px;
+  margin: 150px 5em 25px 50px;
 
 }
