@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { FormErrors } from './FormErrors';
-import './form.css';
+import App from 'D:/JasstTeem/cities/src/App';
+import './login.css';
 
 
-class Form extends Component {
+class Login extends Component {
   constructor (props) {
     super(props);
     this.state = {
@@ -39,8 +40,8 @@ class Form extends Component {
         fieldValidationErrors.username = usernameValid ? '' : ' не верный';
         break;
       case 'password':
-        passwordValid = value.match("12345678");
-        fieldValidationErrors.password = passwordValid ? '': ' не верный';
+        passwordValid = value.match("12345678") && value.length < 9;
+       fieldValidationErrors.password = passwordValid ? '': ' не верный';
         break;
       default:
         break;
@@ -51,6 +52,8 @@ class Form extends Component {
                     passwordValid: passwordValid
                   }, this.validateForm);
   }
+
+
 
   validateForm() {
     this.setState({formValid: this.state.usernameValid && this.state.passwordValid });
@@ -63,41 +66,44 @@ class Form extends Component {
   }
 
   onclick () {
-       this.setState({formValid: window.location.assign('http://localhost:3000/user/')}) ;
-
+       this.setState({formValid: window.location.assign('http://localhost:3000/profile/')}) ;
 
       }
 
 
   render () {
+    const username = this.state.username;
     return (
       <form className="demoForm">
        <div className="form">
-        <h1 >Авторизация</h1>
+        <h1 className="h1avto" >Авторизация</h1>
         <div className="panel panel-default">
           <FormErrors formErrors={this.state.formErrors} />
         </div>
 
         <div className={`form-group ${this.errorClass(this.state.formErrors.username)}`}>
-          <label htmlFor="username">Логин</label>
+          <label className="label1" htmlFor="username">Логин</label>
           <input type="username" required className="form-control" name="username"
             value={this.state.username}
-            onChange={this.handleUserInput}  />
+            onChange={this.handleUserInput} />
         </div>
 
         <div className={`form-group ${this.errorClass(this.state.formErrors.password)}`}>
-          <label htmlFor="password">Пароль</label>
+          <label  className="label1" htmlFor="password">Пароль</label>
           <input type="password" className="form-control" name="password"
             value={this.state.password}
             onChange={this.handleUserInput}  />
+
         </div>
 
-        <button type="submit"
-          disabled={!this.state.formValid}  onClick={(e) => this.onclick(e)} >Войти</button>
+        <Route path="D:/JasstTeem/cities/src/App" data={this.state.formValid} exact component={App}  />
+
+        <button type="submit" className="button"
+          disabled={!this.state.formValid}  onClick={() => this.onclick()} >Войти</button>
          </div>
       </form>
     )
   }
 }
 
-export default Form;
+export default Login;

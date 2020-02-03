@@ -1,0 +1,39 @@
+.Home{
+    background: url(book1.jpg) ;
+    background-repeat: no-repeat;
+    margin: auto;
+    position: absolute;
+    width: 1366px;
+    height: 578px;
+}
+
+.sharl{
+  margin: 1px 0em 25px 950px;
+  background-color: #F0E68C; /* Цвет фона под текстом параграфа */
+  opacity: 0.6;
+    color: #000000; /* Цвет текста */
+
+
+}
+
+.djordj{
+  margin: 0px 0em 25px 650px;
+  background-color: #F0E68C; /* Цвет фона под текстом параграфа */
+  opacity: 0.6;
+    color: #000000; /* Цвет текста */
+
+
+}
+.button1{
+  background-color: #4CAF50;
+  font-size: 20px;
+  padding: 14px 40px;
+  border-radius: 15px;
+  width: 200px;
+  margin: 0px 0px 0px 150px;
+
+}
+
+.button1:hover {
+  background-color:#F0E68C ;
+}

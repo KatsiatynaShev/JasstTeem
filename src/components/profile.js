@@ -1,14 +1,15 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import './user.css'
+import Days  from './Days';
+import './profile.css'
 
-class User extends Component {
+class Profile extends Component {
   render() {
 		return (
 			<div className="Usernew">
-			 <p>Пользователь вошел</p>
+        <Days/>
 			</div>
 		);
 	}
 }
-export default User;
+export default Profile;

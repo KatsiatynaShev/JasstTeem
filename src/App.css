@@ -1,9 +1,8 @@
-.nav{
+.na{
     background: url(book1.jpg) ;
     background-repeat: no-repeat;
     margin: auto;
     position: absolute;
-    top: 13%;
     width: 1366px;
     height: 580px;
 }
@@ -34,13 +33,4 @@ hr{
   color: green; /* Цвет линии для остальных браузеров */
     background-color: green; /* Цвет линии для браузера Firefox и Opera */
     height: 10px; /* Толщина линии */
-}
-.button1{
-  background-color: #4CAF50;
-  font-size: 20px;
-  padding: 14px 40px;
-  border-radius: 8px;
-  width: 200px;
-  margin: 150px 5em 25px 50px;
-
 }

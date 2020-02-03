@@ -2,14 +2,14 @@
 	display: flex;
 	justify-content: center;
 	flex-grow: 1;
-	width: 100%;
-	height:100%;
+	text: center;
 	background: url(book.jpg) ;
 	background-repeat: no-repeat;
 	margin: auto;
-	position: absolute;
+	position:absolute;
+	font-size: 13px;
 	width: 1366px;
-	height: 580px;
+	height: 578px;
 }
 
 
@@ -23,18 +23,30 @@
  margin-top: 150px;
  border: 2px solid #000; /* Параметры рамки */
  -moz-box-sizing: border-box; /* Для Firefox */
- font-size: 15px;
+ font-size: 13px;
  background: linear-gradient(270deg, #a8ed95 0%,#175c05 100%);
 
 }
+.h1avto{
+	margin: 0px 0px 20px 0px;
 
+}
+.label1{
+	margin: 35px 0px 0px 75px;
+	font-size: 18px;
 
-button{
-	margin-top: 30px; /* Отступ сверху */
+}
+
+.form-control{
+	margin: 10px 0px 30px 25px;
+}
+
+.button{
 	background-color: #4CAF50;
   font-size: 20px;
   padding: 14px 40px;
   border-radius: 8px;
   width: 200px;
+	margin: 3px 0px 0px 15px;
 
 }

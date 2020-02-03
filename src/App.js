@@ -1,8 +1,8 @@
 import React from "react";
 import Info from "./components/info"
-import Form from "./components/form"
-import User from "./components/user"
-import book from "./components/book.jpg"
+import Login from "./components/login"
+import Profile from "./components/profile"
+import Home from "./components/home"
 import ReactDOM from 'react-dom';
 import {Route,Link} from 'react-router-dom'
 import './App.css'
@@ -11,29 +11,23 @@ class App extends React.Component {
 
   exid () {
     if(this.props.formValid){
-      window.location.assign('http://localhost:3000/user/');
+      window.location.assign('http://localhost:3000/profile/');
     }
     else {
-      window.location.assign('http://localhost:3000/form/');
+      window.location.assign('http://localhost:3000/login/');
     }
  }
 
-
-  onclick () {
-        window.location.assign('http://localhost:3000/form/');
-      }
-
 	render() {
-
         return (
-          <div >
+          <div  className="nav">
            <nav  >
              <ul>
                <li>
                   <a><Link to="/" className="active" exact >Главная страница</Link></a>
                </li>
                <li>
-                  <a><Link onClick={(e)=>this.exid()}>Пользователь</Link></a>
+                  <a><Link onClick={(e)=>this.exid()}> Пользователь {this.props.username}</Link></a>
                </li>
                <li>
                   <a><Link to="/info">Информация</Link></a>
@@ -43,13 +37,13 @@ class App extends React.Component {
 
 
            <hr/>
-           <div className="nav">
-           
-                   <Route path="/" exact  render={()=><button className="button1" onClick={(e) => this.onclick(e)}>Авторизация </button>} />
+
+
+                   <Route path="/" exact component={Home}/>
                    <Route path="/info" exact component={Info}/>
-                   <Route path="/form" exact component={Form} />
-                   <Route path="/user" exact component={User} />
-          </div>
+                   <Route path="/login"  exact component={Login}  />
+                   <Route path="/profile" exact component={Profile}  />
+
 
           </div>
 
